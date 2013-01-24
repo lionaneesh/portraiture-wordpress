@@ -248,16 +248,13 @@ h3 {
 
 /* Footer */
 
-footer {
+footer.site-footer {
 	overflow: hidden;
 	padding: 20px 0px 60px 0px;
 }
 
-footer > p {
+footer.site-footer > p {
 	text-align: center;
-}
-
-footer > a {
 }
 
 /* =Menu
@@ -462,6 +459,10 @@ object {
 	margin: 0 0 1.5em;
 }
 
+.comment-content {
+    margin: 10px 0 0 10px;
+}
+
 /* Make sure select elements fit in widgets */
 .widget select {
 	max-width: 100%;
@@ -477,6 +478,21 @@ object {
 
 .center {
     text-align: center;
+}
+
+ol.commentlist {
+    list-style: none;
+    margin: 0;
+}
+
+.comment-author > * {
+    font-size: 19px;
+    vertical-align: text-bottom;
+}
+
+ol.commentlist > li {
+    padding: 10px;
+    border: 2px dotted #ccc;
 }
 
 .entry-title {

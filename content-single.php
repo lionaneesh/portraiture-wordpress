@@ -21,12 +21,12 @@
 
 				if ($tag_list) {
 					/* translators: there is a space after the colon */
-					echo "| <b>".__('Tags : ', 'portraiture')."</b>".$taglist;
+					echo "| ".__('Tags : ', 'portraiture').$taglist;
 				}
 				
 				if ($category_list) {
 					/* translators: there is a space after the colon */
-					echo "| <b>".__('Filed in : ', 'portraiture')."</b>".$category_list;
+					echo "| ".__('Filed in : ', 'portraiture').$category_list;
 				}
 			?>
 		</div><!-- .entry-meta -->

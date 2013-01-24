@@ -83,22 +83,20 @@ function portraiture_comment( $comment, $args, $depth ) {
 			<footer>
 				<div class="comment-author vcard">
 					<?php echo get_avatar( $comment, 40 ); ?>
-					<?php printf( __( '%s <span class="says">says:</span>', 'portraiture' ), sprintf( '<cite class="fn">%s</cite>', get_comment_author_link() ) ); ?>
-				</div><!-- .comment-author .vcard -->
-				<?php if ( $comment->comment_approved == '0' ) : ?>
-					<em><?php _e( 'Your comment is awaiting moderation.', 'portraiture' ); ?></em>
-					<br />
-				<?php endif; ?>
-
-				<div class="comment-meta commentmetadata">
-					<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>"><time datetime="<?php comment_time( 'c' ); ?>">
+					<?php printf( __( '%s <span class="said">said at</span>', 'portraiture' ), sprintf( '<cite class="fn">%s</cite>', get_comment_author_link() ) ); ?> <a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>"><time datetime="<?php comment_time( 'c' ); ?>">
 					<?php
 						/* translators: 1: date, 2: time */
 						printf( __( '%1$s at %2$s', 'portraiture' ), get_comment_date(), get_comment_time() ); ?>
 					</time></a>
 					<?php edit_comment_link( __( '(Edit)', 'portraiture' ), ' ' );
 					?>
-				</div><!-- .comment-meta .commentmetadata -->
+
+				</div><!-- .comment-author .vcard -->
+				<?php if ( $comment->comment_approved == '0' ) : ?>
+					<em><?php _e( 'Your comment is awaiting moderation.', 'portraiture' ); ?></em>
+					<br />
+				<?php endif; ?>
+
 			</footer>
 
 			<div class="comment-content"><?php comment_text(); ?></div>
