@@ -1,4 +1,4 @@
-potraiture-wordpress
+Portraiture
 ====================
 
-Port of the awesome "Portraiture (Free CSS theme)" to wordpress.
+Port of (Portraiture)[http://www.freecsstemplates.org/preview/portraiture/] to wordpress.
