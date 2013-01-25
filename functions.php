@@ -96,7 +96,6 @@ add_action( 'widgets_init', 'portraiture_widgets_init' );
  */
 function portraiture_scripts() {
 	wp_enqueue_script( 'jquery' );
-	wp_enqueue_script( 'jquery-slidertron-1.1', get_template_directory_uri() . '/js/slidertron-1.1.js', array('jquery'), false, true );
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.css' );
 	wp_enqueue_style( 'style', get_stylesheet_uri() );
 
