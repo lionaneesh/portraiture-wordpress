@@ -490,9 +490,9 @@ ol.commentlist {
     vertical-align: text-bottom;
 }
 
-ol.commentlist > li {
+li.comment {
     padding: 10px;
-    border: 2px dotted #ccc;
+    border: 1px dotted #ccc;
 }
 
 .entry-title {
@@ -502,4 +502,9 @@ ol.commentlist > li {
 
 .entry-title > * {
     border-bottom: 1px dotted;
+}
+
+#respond {
+    margin-top: 20px;
+    text-align: center;
 }

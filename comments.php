@@ -53,6 +53,8 @@
 			?>
 		</ol><!-- .commentlist -->
 
+		<hr />
+
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 		<nav role="navigation" id="comment-nav-below" class="site-navigation comment-navigation">
 			<h1 class="assistive-text"><?php _e( 'Comment navigation', 'portraiture' ); ?></h1>
