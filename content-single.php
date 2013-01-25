@@ -10,7 +10,7 @@
 		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'portraiture' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 
 		<div class="entry-meta">
-			<?php portraiture_posted_on(); ?> |
+			<?php portraiture_posted_on(); ?>
 			<?php edit_post_link( __( 'Edit', 'portraiture' ), '<span class="edit-link">', '</span>' ); ?>
 			<?php
 				/* translators: used between list items, there is a space after the comma */
